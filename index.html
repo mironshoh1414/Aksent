@@ -8,6 +8,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 <body>
 <!-- Mironshoh header aktual yangiliklar munosabat-->
@@ -15,27 +16,29 @@
         <div class="header_hero">
             <div class="container">
                 <div class="flex justify-between items-center mt-9">
-                    <div class="flex">
+                    <div class="lg:hidden" style="font-size: 24px;">
+                        <i class="fa-solid fa-bars" style="color: #ffffff;"></i>
+                    </div>
+                    <div class="flex max-lg:hidden">
                         <p class="font-sans text-white font-medium leading-5">Toshkent</p>
                         <img class="ml-5" src="IMAGES/cloud.svg" alt="">
                         <p class="ml-2 font-sans text-white font-medium leading-5">28°C</p>
                     </div>
                     <div>
-                        <a href=""><img src="IMAGES/logo.svg" alt=""></a>
+                        <a href=""><img class="max-lg:w-3/4 w-full" src="IMAGES/logo.svg" alt=""></a>
                     </div>
                     <div class="flex items-center">
-                        <a class="flex items-center gap-2 group" href="#"><span class="font-sans font-sm group-hover:text-blue text-white font-medium  transition">O'zbekcha</span>
+                        <a class="flex items-center gap-2 group max-lg:hidden" href="#"><span class="font-sans font-sm group-hover:text-blue text-white font-medium  transition">O'zbekcha</span>
                             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
                             <path class="group-hover:fill-blue transition"  fill-rule="evenodd" clip-rule="evenodd" d="M4.41076 6.91083C4.08533 7.23626 4.08533 7.7639 4.41076 8.08934L9.41077 13.0893C9.7362 13.4148 10.2638 13.4148 10.5893 13.0893L15.5893 8.08934C15.9147 7.7639 15.9147 7.23626 15.5893 6.91083C15.2638 6.58539 14.7362 6.58539 14.4108 6.91083L10 11.3216L5.58928 6.91083C5.26384 6.58539 4.7362 6.58539 4.41076 6.91083Z" fill="#ffffff"/>
                             </svg>
                         </a>
                     </div>
                 </div>
-
                 <div class="mt-10">
                     <div class="flex justify-between">
                         <div>
-                            <ul class="flex gap-6">
+                            <ul class="flex gap-6 max-lg:hidden">
                                 <li><a class="font-sans font-sm group hover:text-blue text-white font-medium  transition" href="#">SIYOSAT</a></li>
                                 <li><a class="font-sans font-sm group hover:text-blue text-white font-medium  transition" href="#">JAMIYAT</a></li>
                                 <li><a class="font-sans font-sm group hover:text-blue text-white font-medium  transition" href="#">TAHLIL</a></li>
@@ -43,13 +46,13 @@
                             </ul>
                         </div>
                         <div class="flex gap-3 items-center">
-                            <a class="font-sans font-sm group hover:text-blue text-white font-medium  transition" href="#">AKSENT-TV</a>
-                            <div class="w-1 h-1 bg-blue rounded-full"></div>
-                            <a class="font-sans font-sm group hover:text-blue text-white font-medium  transition" href="#">NUQRAI-NAZAR</a>
-                            <div class="w-1 h-1 bg-blue rounded-full"></div>
-                            <a class="font-sans font-sm group hover:text-blue text-white font-medium  transition" href="#">INFO-TAQDIM</a>
-                            <div class="ml-4 w-px h-7 bg-white opacity-40"></div>
-                            <a class="group hover:fill-blue ml-4" href=""><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <a class="max-lg:hidden font-sans font-sm group hover:text-blue text-white font-medium  transition" href="#">AKSENT-TV</a>
+                            <div class="max-lg:hidden w-1 h-1 bg-blue rounded-full"></div>
+                            <a class="max-lg:hidden font-sans font-sm group hover:text-blue text-white font-medium  transition" href="#">NUQRAI-NAZAR</a>
+                            <div class="max-lg:hidden w-1 h-1 bg-blue rounded-full"></div>
+                            <a class="max-lg:hidden font-sans font-sm group hover:text-blue text-white font-medium  transition" href="#">INFO-TAQDIM</a>
+                            <div class="max-lg:hidden ml-4 w-px h-7 bg-white opacity-40"></div>
+                            <a class="group hover:fill-blue ml-4 max-lg:absolute top-[45px]" href=""><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
                                 <path class="group-hover:fill-blue" fill-rule="evenodd" clip-rule="evenodd" d="M2.99992 10.5C2.99992 14.6421 6.35779 18 10.4999 18C12.2316 18 13.8261 17.4131 15.0956 16.4275C15.1434 16.5286 15.2092 16.6234 15.2928 16.7071L19 20.4142C19.3905 20.8047 20.0237 20.8047 20.4142 20.4142C20.8047 20.0237 20.8047 19.3905 20.4142 19L16.707 15.2929C16.6234 15.2092 16.5286 15.1435 16.4274 15.0957C17.4131 13.8262 17.9999 12.2316 17.9999 10.5C17.9999 6.35786 14.6421 3 10.4999 3C6.35779 3 2.99992 6.35786 2.99992 10.5ZM4.99992 10.5C4.99992 7.46243 7.46235 5 10.4999 5C13.5375 5 15.9999 7.46243 15.9999 10.5C15.9999 13.5376 13.5375 16 10.4999 16C7.46235 16 4.99992 13.5376 4.99992 10.5Z" fill="white"/>
                                 </svg>
                             </a>
@@ -60,14 +63,14 @@
             <div class="w-full h-px bg-white/20 mt-6"></div>
             <div class="container">
                 <div class="header-main">
-                    <div class="flex justify-between items-center mt-40">
-                        <div class="flex flex-wrap items-center w-[580px]">
+                    <div class="flex justify-between items-center mt-40  max-lg:grid max-lg:grid-cols-1">
+                        <div class="flex flex-wrap items-center w-[580px] max-lg:w-[343px] max-lg:mx-auto">
                             <div class="w-2 h-2 bg-blue rounded-full"></div>
                             <p class="font-sans text-sm text-white/20 uppercase ml-2">Tezkor yangiliklar</p>
                             <a href="#"><h1 class="font-sans text-4xl text-white leading-[50px] mt-3 group hover:text-blue transition font-bold">Davlat rahbari vazirlik, hokimlik bilan navbatdan tashqari yig‘ilishini o‘tkazdi</h1></a>
                             <a class="font-sans text-xs font-medium text-blue mt-4" href="#">Davlat</a>
                         </div>
-                        <div class="overflow-y-scroll w-[342px] flex flex-col h-[248px] gap-y-10 cursor-pointer block">
+                        <div class="overflow-y-scroll w-[342px] flex flex-col h-[248px] gap-y-10 cursor-pointer block max-lg:w-[343px] max-lg:mx-auto max-lg:mt-20">
                             <div class="mr-8">
                                 <a class="group" href="#">
                                     <p class="font-sans font-medium text-xs text-white/60 uppercase">Tahlil</p>
@@ -108,7 +111,7 @@
                     </div>
                 </div>
 
-                <div class="grid grid-cols-4 gap-8 mt-[182px] relative items-center bottom-[-30px]">
+                <div class="grid grid-cols-4 gap-8 mt-[182px] relative items-center bottom-[-30px] max-lg:grid-cols-1 max-lg:mx-auto">
                     <div class="bg-[url('/IMAGES/header_grid_1.png')] cursor-pointer bg-no-repeat">
                         <div class="flex flex-wrap mt-20 p-4">
                             <p class="font-sans text-xs text-white font-medium">25 iyul 2021</p>
@@ -144,8 +147,8 @@
 
     <main>
         <div class="container">
-            <div class="flex justify-between mt-20">
-                <div class="flex">
+            <div class="lg:flex lg:justify-between mt-20">
+                <div class="lg:flex sm:block">
                     <div class="flex flex-col border border-solid border-gray-600 border-opacity-25 ">
                         <h2 class="px-7 text-[28px] text-dark font-sans font-bold mt-4 text-center">Aktual yangiliklar</h2>
                         <div class="flex flex-wrap py-2  px-7 w-[310px]  hover:bg-gray-2 mt-1.5 transition">
@@ -182,7 +185,7 @@
                         </div>
                     </div>
                     <div class="bg-[url('/IMAGES/12.jpg')] w-full bg-no-repeat">
-                        <div class="flex flex-wrap w-[500px] p-8 mt-[210px] items-center ">
+                        <div class="flex flex-wrap w-[500px] p-8 lg:mt-[210px] items-center ">
                             <div class="mx-auto flex items-center gap-2">
                                 <div class="w-2 h-2 bg-blue rounded-full"></div>
                                 <p class="font-sans text-sm text-white/60 uppercase font-medium">So‘nggi yangiliklar</p>
@@ -196,10 +199,10 @@
                     </div>
                 </div>
 
-                <div class="flex flex-col gap-y-8 ml-8 w-[274px]">
+                <div class="flex flex-col gap-y-8 ml-8 w-[274px] max-lg:mx-auto mt-20">
                     <div class="flex">
-                        <button class="py-3 px-[37px] w-1/2 text-[13px] uppercase text-gray-3 font-semibold focus:text-dark-1 focus:border-b-4 focus:border-blue focus:bg-gradient-to-r from-purple-500 to-pink-500">Haftalik</button>
-                        <button class="py-3 px-[37px] w-1/2 text-[13px] uppercase text-gray-3 font-semibold focus:text-dark-1 focus:border-b-4 focus:border-blue focus:bg-gradient-to-r from-purple-500 to-pink-500">Oylik</button>
+                        <button class="py-3 px-[37px] w-1/2 text-[13px] uppercase text-gray-3 font-semibold focus:text-dark-1 focus:border-b-4 focus:border-blue focus:bg-gradient-to-r from-purple-500 to-pink-500 transition">Haftalik</button>
+                        <button class="py-3 px-[37px] w-1/2 text-[13px] uppercase text-gray-3 font-semibold focus:text-dark-1 focus:border-b-4 focus:border-blue focus:bg-gradient-to-r from-purple-500 to-pink-500 transition">Oylik</button>
                     </div>
                     <div class="flex flex-col gap-y-6">
                         <div class="flex items-center ">
