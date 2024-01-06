@@ -4,41 +4,276 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body::-webkit-scrollbar{
+            width: 10px;
+        }
+        body::-webkit-scrollbar-thumb{
+            background:linear-gradient(transparent,#7B7BFF);
+            border-radius: 10px;
+        }
+        .overflow-y-scroll::-webkit-scrollbar{
+            width: 2px;
+        }
+        .overflow-y-scroll::-webkit-scrollbar-thumb{
+            background:#7B7BFF;
+            border-radius: 10px;
+        }
+        .overflow-y-scroll::-webkit-scrollbar-track{
+            background:rgba(255, 255, 255, 0.20);
+        }
+    </style>
 </head>
 <body>
-    
 <!-- Mironshoh header aktual yangiliklar munosabat-->
+    <div class="header w-full h-full bg-[url('/IMAGES/bg-hd.png')] bg-cover top-0 left-0 inline-block">
+        <div class="header_hero">
+            <div class="container">
+                <div class="flex justify-between items-center mt-9">
+                    <div class="flex">
+                        <p class="font-sans text-white font-medium leading-5">Toshkent</p>
+                        <img class="ml-5" src="IMAGES/cloud.svg" alt="">
+                        <p class="ml-2 font-sans text-white font-medium leading-5">28°C</p>
+                    </div>
+                    <div>
+                        <a href=""><img src="IMAGES/logo.svg" alt=""></a>
+                    </div>
+                    <div class="flex items-center">
+                        <a class="flex items-center gap-2 group" href="#"><span class="font-sans font-sm group-hover:text-blue text-white font-medium  transition">O'zbekcha</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                            <path class="group-hover:fill-blue transition"  fill-rule="evenodd" clip-rule="evenodd" d="M4.41076 6.91083C4.08533 7.23626 4.08533 7.7639 4.41076 8.08934L9.41077 13.0893C9.7362 13.4148 10.2638 13.4148 10.5893 13.0893L15.5893 8.08934C15.9147 7.7639 15.9147 7.23626 15.5893 6.91083C15.2638 6.58539 14.7362 6.58539 14.4108 6.91083L10 11.3216L5.58928 6.91083C5.26384 6.58539 4.7362 6.58539 4.41076 6.91083Z" fill="#ffffff"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
 
+                <div class="mt-10">
+                    <div class="flex justify-between">
+                        <div>
+                            <ul class="flex gap-6">
+                                <li><a class="font-sans font-sm group hover:text-blue text-white font-medium  transition" href="#">SIYOSAT</a></li>
+                                <li><a class="font-sans font-sm group hover:text-blue text-white font-medium  transition" href="#">JAMIYAT</a></li>
+                                <li><a class="font-sans font-sm group hover:text-blue text-white font-medium  transition" href="#">TAHLIL</a></li>
+                                <li><a class="font-sans font-sm group hover:text-blue text-white font-medium  transition" href="#">QONUNCHILIK</a></li>
+                            </ul>
+                        </div>
+                        <div class="flex gap-3 items-center">
+                            <a class="font-sans font-sm group hover:text-blue text-white font-medium  transition" href="#">AKSENT-TV</a>
+                            <div class="w-1 h-1 bg-blue rounded-full"></div>
+                            <a class="font-sans font-sm group hover:text-blue text-white font-medium  transition" href="#">NUQRAI-NAZAR</a>
+                            <div class="w-1 h-1 bg-blue rounded-full"></div>
+                            <a class="font-sans font-sm group hover:text-blue text-white font-medium  transition" href="#">INFO-TAQDIM</a>
+                            <div class="ml-4 w-px h-7 bg-white opacity-40"></div>
+                            <a class="group hover:fill-blue ml-4" href=""><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                <path class="group-hover:fill-blue" fill-rule="evenodd" clip-rule="evenodd" d="M2.99992 10.5C2.99992 14.6421 6.35779 18 10.4999 18C12.2316 18 13.8261 17.4131 15.0956 16.4275C15.1434 16.5286 15.2092 16.6234 15.2928 16.7071L19 20.4142C19.3905 20.8047 20.0237 20.8047 20.4142 20.4142C20.8047 20.0237 20.8047 19.3905 20.4142 19L16.707 15.2929C16.6234 15.2092 16.5286 15.1435 16.4274 15.0957C17.4131 13.8262 17.9999 12.2316 17.9999 10.5C17.9999 6.35786 14.6421 3 10.4999 3C6.35779 3 2.99992 6.35786 2.99992 10.5ZM4.99992 10.5C4.99992 7.46243 7.46235 5 10.4999 5C13.5375 5 15.9999 7.46243 15.9999 10.5C15.9999 13.5376 13.5375 16 10.4999 16C7.46235 16 4.99992 13.5376 4.99992 10.5Z" fill="white"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="w-full h-px bg-white/20 mt-6"></div>
+            <div class="container">
+                <div class="header-main">
+                    <div class="flex justify-between items-center mt-40">
+                        <div class="flex flex-wrap items-center w-[580px]">
+                            <div class="w-2 h-2 bg-blue rounded-full"></div>
+                            <p class="font-sans text-sm text-white/20 uppercase ml-2">Tezkor yangiliklar</p>
+                            <a href="#"><h1 class="font-sans text-4xl text-white leading-[50px] mt-3 group hover:text-blue transition font-bold">Davlat rahbari vazirlik, hokimlik bilan navbatdan tashqari yig‘ilishini o‘tkazdi</h1></a>
+                            <a class="font-sans text-xs font-medium text-blue mt-4" href="#">Davlat</a>
+                        </div>
+                        <div class="overflow-y-scroll w-[342px] flex flex-col h-[248px] gap-y-10 cursor-pointer block">
+                            <div class="mr-8">
+                                <a class="group" href="#">
+                                    <p class="font-sans font-medium text-xs text-white/60 uppercase">Tahlil</p>
+                                    <p class="font-sans text-base font-medium text-white group hover:text-blue transition mt-2">Davlat rahbari vazirlik, hokimlik va idoralar bilan navbatdan tashqari yig‘ilishini o‘tkazdi</p>
+                                    <div class="mt-2 group">
+                                        <a class="font-sans text-xs text-blue" href="#">Davlat</a>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="mr-8">
+                                <a class="group" href="#">
+                                    <p class="font-sans font-medium text-xs text-white/60 uppercase">Tahlil</p>
+                                    <p class="font-sans text-base font-medium text-white group hover:text-blue transition mt-2">19 yoshli Ulug‘bek Rashidov Olimpiya finalida buyuk britaniyalik raqibini mag‘lub etdi.</p>
+                                    <div class="mt-2">
+                                        <a class="font-sans text-xs text-blue" href="#">Jamiyat</a>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="mr-8">
+                                <a class="group" href="#">
+                                    <p class="font-sans font-medium text-xs text-white/60 uppercase">Tahlil</p>
+                                    <p class="font-sans text-base font-medium text-white group hover:text-blue transition mt-2">Davlat rahbari vazirlik, hokimlik va idoralar bilan navbatdan tashqari yig‘ilishini o‘tkazdi</p>
+                                    <div class="mt-2">
+                                        <a class="font-sans text-xs text-blue" href="#">Sport</a>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="mr-8">
+                                <a class="group" href="#">
+                                    <p class="font-sans font-medium text-xs text-white/60 uppercase">Tahlil</p>
+                                    <p class="font-sans text-base font-medium text-white group-hover:text-blue transition mt-2">Davlat rahbari vazirlik, hokimlik va idoralar bilan navbatdan tashqari yig‘ilishini o‘tkazdi</p>
+                                    <div class="mt-2">
+                                        <a class="font-sans text-xs text-blue" href="#">Davlat</a>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="grid grid-cols-4 gap-8 mt-[182px] relative items-center bottom-[-30px]">
+                    <div class="bg-[url('/IMAGES/header_grid_1.png')] cursor-pointer bg-no-repeat">
+                        <div class="flex flex-wrap mt-20 p-4">
+                            <p class="font-sans text-xs text-white font-medium">25 iyul 2021</p>
+                            <a class="font-sans text-xs text-blue font-medium ml-2" href="">Sport</a>
+                            <p class="font-sans text-xs text-white font-medium mt-2">19 yoshli Ulug‘bek Rashidov Olimpiya finalida buyuk britaniyalik raqibini mag‘lubiyatga uchratdi</p>
+                        </div>
+                    </div>
+                    <div class="bg-[url('/IMAGES/header_grid_2.png')] cursor-pointer bg-no-repeat">
+                        <div class="flex flex-wrap mt-20 p-4">
+                            <p class="font-sans text-xs text-white font-medium">25 iyul 2021</p>
+                            <a class="font-sans text-xs text-blue font-medium ml-2" href="">Sport</a>
+                            <p class="font-sans text-xs text-white font-medium mt-2">19 yoshli Ulug‘bek Rashidov Olimpiya finalida buyuk britaniyalik raqibini mag‘lubiyatga uchratdi</p>
+                        </div>
+                    </div>
+                    <div class="bg-[url('/IMAGES/header_grid_3.png')] cursor-pointer bg-no-repeat">
+                        <div class="flex flex-wrap mt-20 p-4">
+                            <p class="font-sans text-xs text-white font-medium">25 iyul 2021</p>
+                            <a class="font-sans text-xs text-blue font-medium ml-2" href="">Sport</a>
+                            <p class="font-sans text-xs text-white font-medium mt-2">19 yoshli Ulug‘bek Rashidov Olimpiya finalida buyuk britaniyalik raqibini mag‘lubiyatga uchratdi</p>
+                        </div>
+                    </div>
+                    <div class="bg-[url('/IMAGES/header_grid_4.png')] cursor-pointer bg-no-repeat">
+                        <div class="flex flex-wrap mt-20 p-4">
+                            <p class="font-sans text-xs text-white font-medium">25 iyul 2021</p>
+                            <a class="font-sans text-xs text-blue font-medium ml-2" href="">Sport</a>
+                            <p class="font-sans text-xs text-white font-medium mt-2">19 yoshli Ulug‘bek Rashidov Olimpiya finalida buyuk britaniyalik raqibini mag‘lubiyatga uchratdi</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <main>
+        <div class="container">
+            <div class="flex justify-between mt-20">
+                <div class="flex">
+                    <div class="flex flex-col border border-solid border-gray-600 border-opacity-25 ">
+                        <h2 class="px-7 text-[28px] text-dark font-sans font-bold mt-4 text-center">Aktual yangiliklar</h2>
+                        <div class="flex flex-wrap py-2  px-7 w-[310px]  hover:bg-gray-2 mt-1.5 transition">
+                            <a href="">
+                                <p class="text-dark font-base leading-6 font-medium">Samarqand viloyatida chorva mollarining asosiy qismi aholi tomonidan boqilayotgani </p>
+                                <div class="flex gap-3 mt-2">
+                                    <p class="text-gray-3 text-xs font-medium">Bugun, 15:21</p>
+                                    <a class="text-blue text-xs font-medium" href="">Davlat</a>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="flex flex-wrap py-2 px-7 w-[310px] hover:bg-gray-2 mt-1.5 transition">
+                            <p class="text-dark font-base leading-6 font-medium">Bayden AQShning Iroqdagi jangovar missiyasi tugaganini ma'lum qildi.</p>
+                            <div class="flex gap-3 mt-2">
+                                <p class="text-gray-3 text-xs font-medium">Bugun, 15:21</p>
+                                <a class="text-blue text-xs font-medium" href="">Davlat</a>
+                            </div>
+                        </div>
+                        <div class="flex flex-wrap py-2 px-7 w-[310px] hover:bg-gray-2 mt-1.5 transition">
+                            <p class="text-dark font-base leading-6 font-medium">Davlat rahbari vazirlik, hokimlik va idoralar bilan navbatdan tashqari yig‘ilishini o‘tkazdi</p>
+                            <div class="flex gap-3 mt-2">
+                                <p class="text-gray-3 text-xs font-medium">5 yanvar 2021</p>
+                                <a class="text-blue text-xs font-medium" href="">Davlat</a>
+                            </div>
+                        </div>
+                        <div class="w-[250px] h-px bg-dark-1/15 mx-auto mt-4"></div>
+                        <div class="mt-4  mx-auto  w-[250px] items-center group">
+                            <a class="flex justify-between items-center pb-4" href="#">
+                                <p class="text-dark text-sm font-semibold uppercase group">Barcha yangiliklar</p>
+                                <svg class="group-hover:translate-x-2 transition" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M8.75713 17.7007C9.14412 18.0947 9.77726 18.1004 10.1713 17.7134L15.2622 12.7134C15.4536 12.5254 15.5615 12.2683 15.5615 12C15.5615 11.7317 15.4536 11.4746 15.2622 11.2866L10.1713 6.28655C9.77726 5.89956 9.14412 5.90526 8.75713 6.29929C8.37014 6.69332 8.37585 7.32646 8.76987 7.71345L12.1162 11L12.9733 12L12.1162 13L8.76987 16.2866C8.37585 16.6735 8.37014 17.3067 8.75713 17.7007Z" fill="#071333" fill-opacity="0.4"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="bg-[url('/IMAGES/12.jpg')] w-full bg-no-repeat">
+                        <div class="flex flex-wrap w-[500px] p-8 mt-[210px] items-center ">
+                            <div class="mx-auto flex items-center gap-2">
+                                <div class="w-2 h-2 bg-blue rounded-full"></div>
+                                <p class="font-sans text-sm text-white/60 uppercase font-medium">So‘nggi yangiliklar</p>
+                            </div>
+                            <p class="mt-4 text-center text-[28px] text-white leading-10 font-bold group hover:text-blue transition">Keyingi yil boshidan O‘zbekistonda koronavirusga qarshi dori ishlab chiqarilishi kutilmoqda</p>
+                            <div class="flex mx-auto gap-2 mt-4">
+                                <p class="text-sm text-white/60 font-sans font-medium">Bugun, 15:32</p>
+                                <a class="text-sm text-blue font-sans font-medium" href="#">Davlat</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="flex flex-col gap-y-8">
+                    <div class="flex">
+                        <a href="#">Haftalik</a>
+                        <a href="#">Oylik</a>
+                    </div>
+                </div>
+            </div>
+            <div class="mt-24">
+                <div class="flex">
+                    <p>Munosabat</p>
+
+                </div>
+            </div>
+        </div>
+    </main>
+    <button id="button1" class="border-b-4 border-blue-500">Birinchi Button</button>
+    <button id="button2" class="border-b-4 border-black">Ikkinchi Button</button>
 <!-- -->
 
 
-<!-- Sherzod  qonunchilik info-taqdim-->
+<!-- Azim  qonunchilik info-taqdim-->
 
 <!--  -->
 
 
-<!-- Azimbek  siyosat footer-->
+<!-- Sherzod  siyosat footer-->
 
 <!--  -->
-
+<script src="https://cdn.jsdelivr.net/npm/tailwind-scrollbar-daisyui@1.0.3/src/index.min.js"></script>
 <script src="https://cdn.tailwindcss.com"></script>
+
 <script>
     tailwind.config = {
         theme: {
+            fontFamily:{
+                sans:'Open Sans'
+            },
             container:{
                 center:true,
-                padding:'8rem'
+                padding:'8rem',
             },
             extend: {
                 colors: {
                     white:{
                         DEFAULT:'#FFF',
+                    },
+                    gray:{
+                        1:'#151515',
+                        2:'#F2F2FA',
+                        3:'#A1A1A1'
+                    },
+                    blue:'#7B7BFF',
+                    dark:{
+                        1:'#151515'
                     }
                 }
             }
         }
     }
 </script>
-  </script>
+</script>
 </body>
 </html>
