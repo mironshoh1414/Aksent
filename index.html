@@ -7,25 +7,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <style>
-        body::-webkit-scrollbar{
-            width: 10px;
-        }
-        body::-webkit-scrollbar-thumb{
-            background:linear-gradient(transparent,#7B7BFF);
-            border-radius: 10px;
-        }
-        .overflow-y-scroll::-webkit-scrollbar{
-            width: 2px;
-        }
-        .overflow-y-scroll::-webkit-scrollbar-thumb{
-            background:#7B7BFF;
-            border-radius: 10px;
-        }
-        .overflow-y-scroll::-webkit-scrollbar-track{
-            background:rgba(255, 255, 255, 0.20);
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 <!-- Mironshoh header aktual yangiliklar munosabat-->
@@ -191,8 +173,8 @@
                         </div>
                         <div class="w-[250px] h-px bg-dark-1/15 mx-auto mt-4"></div>
                         <div class="mt-4  mx-auto  w-[250px] items-center group">
-                            <a class="flex justify-between items-center pb-4" href="#">
-                                <p class="text-dark text-sm font-semibold uppercase group">Barcha yangiliklar</p>
+                            <a class="flex justify-between items-center pb-4 mt-4" href="#">
+                                <p class="text-dark text-sm font-semibold uppercase group ">Barcha yangiliklar</p>
                                 <svg class="group-hover:translate-x-2 transition" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
                                     <path fill-rule="evenodd" clip-rule="evenodd" d="M8.75713 17.7007C9.14412 18.0947 9.77726 18.1004 10.1713 17.7134L15.2622 12.7134C15.4536 12.5254 15.5615 12.2683 15.5615 12C15.5615 11.7317 15.4536 11.4746 15.2622 11.2866L10.1713 6.28655C9.77726 5.89956 9.14412 5.90526 8.75713 6.29929C8.37014 6.69332 8.37585 7.32646 8.76987 7.71345L12.1162 11L12.9733 12L12.1162 13L8.76987 16.2866C8.37585 16.6735 8.37014 17.3067 8.75713 17.7007Z" fill="#071333" fill-opacity="0.4"/>
                                 </svg>
@@ -214,23 +196,67 @@
                     </div>
                 </div>
 
-                <div class="flex flex-col gap-y-8">
+                <div class="flex flex-col gap-y-8 ml-8 w-[274px]">
                     <div class="flex">
-                        <a href="#">Haftalik</a>
-                        <a href="#">Oylik</a>
+                        <button class="py-3 px-[37px] w-1/2 text-[13px] uppercase text-gray-3 font-semibold focus:text-dark-1 focus:border-b-4 focus:border-blue focus:bg-gradient-to-r from-purple-500 to-pink-500">Haftalik</button>
+                        <button class="py-3 px-[37px] w-1/2 text-[13px] uppercase text-gray-3 font-semibold focus:text-dark-1 focus:border-b-4 focus:border-blue focus:bg-gradient-to-r from-purple-500 to-pink-500">Oylik</button>
                     </div>
-                </div>
-            </div>
-            <div class="mt-24">
-                <div class="flex">
-                    <p>Munosabat</p>
-
+                    <div class="flex flex-col gap-y-6">
+                        <div class="flex items-center ">
+                            <div><img src="IMAGES/img_1.jpg" alt=""></div>
+                            <a href="#">
+                                <div class="flex flex-wrap items-center ml-4 group cursor-pointer">
+                                    <p class="text-xs text-gray-3 font-medium font-sans">26 iyul 2021</p>
+                                    <a class="text-xs text-blue font-medium font-sans ml-2" href="">Davlat</a>
+                                    <p class="text-sm text-dark font-medium group-hover:text-blue mt-2.5">Toshkent konferensiyasidan real natijalar kutish o‘rinlimi?</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="flex items-center ">
+                            <div><img src="IMAGES/img_2.jpg" alt=""></div>
+                            <a href="#">
+                                <div class="flex flex-wrap items-center ml-4 group cursor-pointer">
+                                    <p class="text-xs text-gray-3 font-medium font-sans">26 iyul 2021</p>
+                                    <a class="text-xs text-blue font-medium font-sans ml-2" href="">Davlat</a>
+                                    <p class="text-sm text-dark font-medium group-hover:text-blue mt-2.5">Toshkent konferensiyasidan real natijalar kutish o‘rinlimi?</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="flex items-center ">
+                            <div><img src="IMAGES/img_3.jpg" alt=""></div>
+                            <a href="#">
+                                <div class="flex flex-wrap items-center ml-4 group cursor-pointer">
+                                    <p class="text-xs text-gray-3 font-medium font-sans">26 iyul 2021</p>
+                                    <a class="text-xs text-blue font-medium font-sans ml-2" href="">Davlat</a>
+                                    <p class="text-sm text-dark font-medium group-hover:text-blue mt-2.5">Toshkent konferensiyasidan real natijalar kutish o‘rinlimi?</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="flex items-center ">
+                            <div><img src="IMAGES/img_4.jpg" alt=""></div>
+                            <a href="#">
+                                <div class="flex flex-wrap items-center ml-4 group cursor-pointer">
+                                    <p class="text-xs text-gray-3 font-medium font-sans">26 iyul 2021</p>
+                                    <a class="text-xs text-blue font-medium font-sans ml-2" href="">Davlat</a>
+                                    <p class="text-sm text-dark font-medium group-hover:text-blue mt-2.5">Toshkent konferensiyasidan real natijalar kutish o‘rinlimi?</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="flex items-center ">
+                            <div><img src="IMAGES/img_5.jpg" alt=""></div>
+                            <a href="#">
+                                <div class="flex flex-wrap items-center ml-4 group cursor-pointer">
+                                    <p class="text-xs text-gray-3 font-medium font-sans">26 iyul 2021</p>
+                                    <a class="text-xs text-blue font-medium font-sans ml-2" href="">Davlat</a>
+                                    <p class="text-sm text-dark font-medium group-hover:text-blue mt-2.5">Toshkent konferensiyasidan real natijalar kutish o‘rinlimi?</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </main>
-    <button id="button1" class="border-b-4 border-blue-500">Birinchi Button</button>
-    <button id="button2" class="border-b-4 border-black">Ikkinchi Button</button>
 <!-- -->
 
 
